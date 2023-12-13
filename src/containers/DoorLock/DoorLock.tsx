@@ -4,7 +4,6 @@ import {RootState} from "../../app/store.ts";
 import {clear, deleteNumber, enter, enterNumber} from "./doorLockSlice.ts";
 
 const DoorLock = () => {
-
     const doorLockValue = useSelector((state: RootState) => state.doorLock.value);
     const dispatch = useDispatch();
 
@@ -16,7 +15,7 @@ const DoorLock = () => {
         <div className="door-lock">
             <p className='logo'>ABLOY</p>
             <div className={screenClass}>
-                {doorLockValue}
+                {doorLockValue.replace(/\d/g, '*')}
             </div>
             <button className='clear-btn' onClick={() => dispatch(clear())}>restart</button>
             <div className="keyboard">
