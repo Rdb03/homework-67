@@ -1,0 +1,81 @@
+.door-lock {
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 350px;
+    height: 550px;
+    background: #e3e3e3;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo {
+    margin: 0;
+    line-height: 40px;
+    height: 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+.screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 100px;
+    border: 5px solid black;
+    margin: 40px auto;
+    background: #ffffff;
+    text-align: center;
+}
+
+.screen-allowed {
+    background-color: green;
+}
+
+.screen-denied{
+    background-color: red;
+}
+
+.clear-btn {
+    background-color: red;
+    border: 1px solid black;
+    width: 100px;
+    margin: 0 20px 30px auto;
+    height: 20px;
+    font-size: 10px;
+    color: white;
+    text-align: center;
+    line-height: 10px;
+}
+
+.clear-btn:hover {
+    border: 1px solid black;
+}
+
+.clear-btn:active{
+    background-color: #930202;
+}
+
+.keyboard {
+    display: flex;
+    flex-wrap: wrap;
+    width: 300px;
+    height: 270px;
+    margin: 0 auto;
+}
+
+.keyboard-btn {
+    flex: 1 0 33.33%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid black;
+}
+
+.keyboard-btn:active{
+    background-color: gray;
+}
+
+.keyboard-btn:hover{
+    border: 1px solid #4e4c4c;
+}
